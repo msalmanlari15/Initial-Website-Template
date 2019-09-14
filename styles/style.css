@@ -1,25 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html,
 body {
-   margin:0;
-   padding:0;
-   height:100%;
+  height: 100%;
+  width: 100%;
+  font-family: Poppins, sans-serif;
 }
+
+body {
+  background-color: #f1f1f1;
+}
+
 #container {
-   min-height:100%;
-   position:relative;
+  min-height: 100%;
+  width: 95%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
+
 #header {
-   background:#ff0;
-   padding:10px;
+  background: #ff0;
+  height: 60px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
+
+#header .logo {
+  background-color: antiquewhite;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .nav {
+  background-color: aqua;
+  height: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .login {
+  background-color: beige;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #main {
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
+  padding: 5px;
+  background-color: #e6e1e1;
+  -webkit-box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.25);
+  margin: 10px 0px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 }
+
+#main .box1 {
+  background-color: brown;
+  height: 500px;
+}
+
+#main .box2 {
+  background-color: red;
+  height: 500px;
+}
+
+#main .box3 {
+  background-color: green;
+  height: 500px;
+}
+
+#main .box4 {
+  background-color: blue;
+  height: 500px;
+}
+
 #footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:#6cf;
+  width: 100%;
+  height: 30px;
+  /* Height of the footer */
+  background: #6cf;
 }
+/*# sourceMappingURL=style.css.map */
